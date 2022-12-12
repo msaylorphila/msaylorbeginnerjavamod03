@@ -1,9 +1,10 @@
+/* creates box sizing for the entire page */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+/* defines the height margin and padding for our html body and wrapper class */
 html,
 body,
 .wrapper {
@@ -11,25 +12,25 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/* defines the font family and background color for our body */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
-
+/* defines the padding for our wrapper class */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/* defines our text align padding and text color for our header */
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
+/* styles our card class for our generate a password box */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -41,7 +42,7 @@ header {
   max-width: 800px;
   padding: 30px 40px;
 }
-
+/* creates a space between my card header and card body */
 .card-header::after {
   content: " ";
   display: block;
@@ -49,15 +50,15 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-
+/* defines the min height of my card body */
 .card-body {
   min-height: 100px;
 }
-
+/* aligns my button */
 .card-footer {
   text-align: center;
 }
-
+/* creates space before my button */
 .card-footer::before {
   content: " ";
   display: block;
@@ -65,13 +66,13 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-
+/* aligns my button */
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
-
+/* styles my button */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -87,16 +88,13 @@ header {
   text-align: center;
   cursor: pointer;
 }
-
+/* gives my cursor styling when my button isnt in use */
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
-.float-right {
-  float: right;
-}
-
+/* stylized my text area element identified as password */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -117,7 +115,7 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
-
+/* a mediaquerie for my button class and password id to keep the font size margin and padding to scale with a difference in page size*/
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -129,7 +127,7 @@ button[disabled] {
     font-size: 1rem;
   }
 }
-
+/* media querie calling for my button font size to stay in scale with page size */
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;

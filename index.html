@@ -7,12 +7,16 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="Assets/style.css" />
   </head>
+  <!-- This body element contains the code for the entire webpage -->
   <body>
+    <!-- This wrapper class was created to give padding to our generator to better place it on the page -->
     <div class="wrapper">
+      <!-- A header with the text Password Generator -->
       <header>
         <h1>Password Generator</h1>
       </header>
-      <div class="card">
+      <!-- A section that wraps the lower part of our generator to give style to that portion only that is then broken down into header body and footer classes to give specifity to further style each section  -->
+      <section class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
@@ -24,11 +28,12 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <div class="card-footer">
+        <footer class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
-        </div>
+        </footer>
       </div>
-    </div>
+    </section>
+    <!-- link to my javaScript file -->
     <script src="Assets/script.js"></script>
   </body>
 </html>
