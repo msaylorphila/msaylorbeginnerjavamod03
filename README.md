@@ -13,7 +13,7 @@ n/a
 
 As a user when I click on the button to generate my password the writePassword function is ran which then runs my generatePassword funtion that meets me with a prompt asking me to pick a password length. If I choose a number below 8 or above 128 I am met with another prompt to ask me to meet a number within that range. Following this I am met with a series of confirms for whether I would like to include special characters, numbers, lowercase, and/or uppercase letters. My code then runs a for loop that pulls random characters from each specified string into a character pool which is then pushed into a finalPassword array and returned. See below for a screenshot demonstrating my code in the console.
 
-![Screenshot of console](assets/Images/Screen%20Shot%202022-12-12%20at%201.13.03%20PM.png)
+![Screenshot of console](/Assets/Images/Screen%20Shot%202022-12-12%20at%201.13.03%20PM.png)
 
 
 ## License
